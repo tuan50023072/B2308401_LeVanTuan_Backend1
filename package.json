@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "author": "Tuan Le",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0"
   },
   "devDependencies": {
@@ -18,6 +22,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.5.1",
     "globals": "^16.4.0",
+    "nodemon": "^3.1.10",
     "prettier": "^3.6.2"
   }
 }
